@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Software-engineering-project-1.iml" filepath="$PROJECT_DIR$/Software-engineering-project-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringManipulatorTaavi/StringManipulatorTaavi.iml" filepath="$PROJECT_DIR$/StringManipulatorTaavi/StringManipulatorTaavi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refactor assignment/refactor assignment.iml" filepath="$PROJECT_DIR$/refactor assignment/refactor assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week-3 Home-assignment/week-3 Home-assignment.iml" filepath="$PROJECT_DIR$/week-3 Home-assignment/week-3 Home-assignment.iml" />
+    </modules>
+  </component>
+</project>
