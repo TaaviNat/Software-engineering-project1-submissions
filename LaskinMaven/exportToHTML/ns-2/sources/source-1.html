@@ -101,11 +101,11 @@ Current scope:     <a href="../../index.html">all classes</a>
 <b class="nc">&nbsp;        result = result * n;</b>
 &nbsp;    }
 &nbsp;
-&nbsp;    public void divide(double n) {
-<b class="fc">&nbsp;        if (n == 0) {</b>
-<b class="fc">&nbsp;            throw new IllegalArgumentException(&quot;not possible to divide to zero &quot;);</b>
+&nbsp;    public void divide(int num) {
+<b class="fc">&nbsp;        if (num == 0) {</b>
+<b class="fc">&nbsp;            throw new ArithmeticException(&quot;division by zero&quot;);</b>
 &nbsp;        }
-<b class="fc">&nbsp;        result = result / n;</b>
+<b class="fc">&nbsp;        result /= num;</b>
 &nbsp;    }
 &nbsp;
 &nbsp;    public void quadrilateral(double n) {
@@ -127,6 +127,10 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;    public void currentOFF() {
 &nbsp;        // Tähän voisi laittaa lopputoimet
 <b class="fc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public void square(int aNum) {
+&nbsp;        result = aNum * aNum;
+&nbsp;    }
 &nbsp;}
 </code>
 </pre>
@@ -151,7 +155,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2024-02-12 20:22</div>
+    <div style="float:right;">generated on 2024-02-12 20:38</div>
 </div>
 </body>
 </html>
