@@ -1,3 +1,5 @@
+package main.java;
+
 import laskin.Laskin;
 
 public class Main {

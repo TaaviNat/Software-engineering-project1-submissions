@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ExtraTest</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">test.java.laskin</a>
+</div>
+
+<h1>Coverage Summary for Class: ExtraTest (test.java.laskin)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ExtraTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/18)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package test.java.laskin;
+&nbsp;
+&nbsp;import org.junit.jupiter.api.AfterAll;
+&nbsp;import org.junit.jupiter.api.BeforeAll;
+&nbsp;import org.junit.jupiter.api.BeforeEach;
+&nbsp;import org.junit.jupiter.api.DisplayName;
+&nbsp;import org.junit.jupiter.api.Test;
+&nbsp;import test.java.laskin.AbstractParent;
+&nbsp;
+&nbsp;import static org.junit.jupiter.api.Assertions.assertEquals;
+&nbsp;import static org.junit.jupiter.api.Assertions.assertThrows;
+&nbsp;
+<b class="nc">&nbsp;public class ExtraTest extends AbstractParent {</b>
+&nbsp;
+<b class="nc">&nbsp;    private static laskin.Laskin laskin = new laskin.Laskin();</b>
+<b class="nc">&nbsp;    private final double DELTA = 0.001;</b>
+&nbsp;
+&nbsp;    @BeforeAll
+&nbsp;    public static void setUp() {
+<b class="nc">&nbsp;        System.out.println(&quot;@BeforeAll current ON (Prior to the first test)&quot;);</b>
+<b class="nc">&nbsp;        laskin.currentON();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @AfterAll
+&nbsp;    public static void tearDown() {
+<b class="nc">&nbsp;        System.out.println(&quot;@AfterAll current OFF (all the tests are done).&quot;);</b>
+<b class="nc">&nbsp;        laskin.currentOFF();</b>
+<b class="nc">&nbsp;        laskin = null;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @BeforeEach
+&nbsp;    public void setZero() {
+<b class="nc">&nbsp;        System.out.println(&quot;  set to zero laskin.&quot;);</b>
+<b class="nc">&nbsp;        laskin.setZero();</b>
+<b class="nc">&nbsp;        assertEquals(0, laskin.returnResult(), DELTA, &quot;Set to zero does not work&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    public void testSquareroot2() {
+<b class="nc">&nbsp;        laskin.squareroot(2);</b>
+<b class="nc">&nbsp;        assertEquals(Math.sqrt(2), laskin.returnResult(), DELTA, &quot;Square root of 2 is wrong&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    public void testQuadrilateral4() {
+<b class="nc">&nbsp;        laskin.quadrilateral(4);</b>
+<b class="nc">&nbsp;        assertEquals(16, laskin.returnResult(), DELTA, &quot;The number 4 Quadrilateral is wrong&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    public void testQuadrilateral5() {
+<b class="nc">&nbsp;        laskin.quadrilateral(5);</b>
+<b class="nc">&nbsp;        assertEquals(25, laskin.returnResult(), DELTA, &quot;The number 5 Quadrilateral is wrong&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Test the square root of a negative number&quot;)
+&nbsp;    public void testNegSquareroot() {
+<b class="nc">&nbsp;        assertThrows(IllegalArgumentException.class, () -&gt; laskin.squareroot(-2));</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-02-16 15:01</div>
+</div>
+</body>
+</html>

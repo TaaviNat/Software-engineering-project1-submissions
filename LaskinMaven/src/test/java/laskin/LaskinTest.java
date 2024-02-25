@@ -1,4 +1,4 @@
-package laskin;
+package test.java.laskin;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class LaskinTest {
 
-    private Laskin laskin = new Laskin();
+    private laskin.Laskin laskin = new laskin.Laskin();
     private final double DELTA = 0.001;
 
     @BeforeEach

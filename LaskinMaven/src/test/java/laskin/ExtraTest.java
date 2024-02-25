@@ -1,17 +1,18 @@
-package laskin;
+package test.java.laskin;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import test.java.laskin.AbstractParent;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ExtraTest extends AbstractParent {
 
-    private static Laskin laskin = new Laskin();
+    private static laskin.Laskin laskin = new laskin.Laskin();
     private final double DELTA = 0.001;
 
     @BeforeAll

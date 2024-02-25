@@ -1,4 +1,4 @@
-package laskin;
+package test.java.laskin;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
